@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li {
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in-out;
+}
+
+.hero-section {
+    background-image: url(images/hero_image.png);
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-section h1 {
+    font-size: 96px;
+}
+
+.hero-section h3 {
+    font-size: 32px;
+}
+
+.music-section {
+    padding-top: 50px;
+    background: var(--purple500);
+    height: 85vh;
+}
+
+.music-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.music-section h2 {
+    font-size: 36px;
+}
+
+.music-section h4 {
+    font-size: 24px;
+}
+
+.music-section p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.ipad-iphone-img {
+    position: relative;
+    /* top: 400px; */
+    /* margin-top: -300px; */
+}
+
+.primary-btn {
+    background-color: var(--red600);
+    color: white;
+}
+
+.secondary-btn {
+    background-color: var(--purple300);
+    color: white;
+    align-self: flex-start;
+}
+
+.about-music {
+    padding-top: 400px;
+    margin-bottom: 50px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.video-section {
+    background-image: url(images/video.png);
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+
+.video-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+
+.video-section h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.video-section p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hero-section,
+.video-section {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gift-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px;
+    gap: 50px;
+}
+
+.gift-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-upper {
+    background-color: var(--purple600);
+    padding: 20px;
+
+}
+
+.footer-upper .container {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.footer-upper h4 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+
+.footer-upper ul {
+    list-style: none;
+}
+
+.footer-lower {
+    background-color: var(--purple300);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+@media (max-width:1024px) {
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .hero-section h1 {
+        font-size: 76px;
+    }
+
+    .hero-section h3 {
+        font-size: 28px;
+    }
+
+
+    .music-section {
+        height: 90vh;
+    }
+
+    .ipad-iphone-img img {
+        width: 600px;
+    }
+
+    .about-music {
+        margin-top: -150px;
+        margin-bottom: 50px;
+        display: grid;
+        place-items: center;
+        gap: 50px;
+    }
+
+    .about-music img {
+        width: 600px;
+    }
+
+}
+
+@media (max-width:425px) {
+    .container {
+        max-width: 425px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    nav {
+        padding: 15px 10px;
+    }
+
+    nav ul {
+        gap: 10px;
+        font-size: 16px;       
+    }
+
+    .hero-section .container {
+        margin-top: -100px;
+    }
+
+    .hero-section h1 {
+        font-size: 50px;
+    }
+
+    .hero-section h3 {
+        font-size: 24px;
+    }
+
+    .hero-section p {
+        padding: 0px 10px;
+    }
+
+    .music-section {
+        height: 90vh;
+    }
+
+    .ipad-iphone-img img {
+        width: 400px;
+    }
+
+    .about-music {
+        margin-top: -150px;
+        margin-bottom: 50px;
+        display: grid;
+        place-items: center;
+        gap: 50px;
+    }
+
+    .about-music p {
+        padding: 0px 10px;
+    }
+
+    .about-music img {
+        width: 400px;
+    }
+
+    .gift-card img {
+        width: 300px;
+        margin-left: -50px;
+    }
+
+    .footer-upper {
+        background-color: var(--purple600);
+        padding: 20px;
+    }
+    
+    .footer-upper .container {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: space-between;
+    }
+    
+    .footer-upper h4 {
+        border-bottom: 1px solid white;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .footer-upper ul {
+        list-style: none;
+    }
+}
